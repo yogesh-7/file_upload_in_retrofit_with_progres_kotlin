@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">single file upload in retrofit with progres kotlin</string>
+    <string name="select_files">Select Files</string>
+    <string name="uploading_media">Uploading media ...</string>
+    <string name="please_wait">Please wait</string>
+    <string name="uploading_file">Uploading file</string>
+    <string name="select_picture">Select Picture</string>
+
+    <string name="uploading_scan">Uploading Scan</string>
+    <string name="uploading_scan_value">22% Complete</string>
+    <string name="uploading_scan_value_set">% Complete</string>
+</resources>

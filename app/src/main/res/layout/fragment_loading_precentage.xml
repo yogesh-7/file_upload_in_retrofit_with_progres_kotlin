@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@drawable/loading_fragment_background"
+        >
+        <com.cloud.progressbar.CircleProgressBar
+            android:id="@+id/loading_progress_bar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            app:progressBackColor="#e0e0e0"
+            app:progressColor="@color/progress_bar_color"
+            app:progressWidth="100dp"
+            tools:progress="22"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_loading_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:text="@string/uploading_scan"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/loading_progress_bar"
+            app:layout_constraintStart_toStartOf="@id/loading_progress_bar"
+            app:layout_constraintTop_toBottomOf="@+id/loading_progress_bar" />
+
+        <TextView
+            android:id="@+id/tv_loading_progress_bar_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:textSize="12sp"
+            tools:text="@string/uploading_scan_value"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/tv_loading_progress_bar"
+            app:layout_constraintStart_toStartOf="@id/tv_loading_progress_bar"
+            app:layout_constraintTop_toBottomOf="@+id/tv_loading_progress_bar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
